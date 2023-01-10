@@ -4,16 +4,30 @@ section{
     margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
+    display: flex;
+    }
 
 .block{
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+#assignment-01{
+    flex-direction: row-reverse;
+}
+#assignment-02{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(3, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    justify-content: space-between;
 }
 
 #assignment-03{
@@ -22,3 +36,8 @@ section{
 #assignment-03 .block + .block{
   margin-left: 20px;
 }
+
+
+
+
+
